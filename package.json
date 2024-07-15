@@ -23,7 +23,7 @@
     "scripts": {
         "dev": "vite --config vite/config.dev.ts",
         "build": "vite build --config vite/config.prod.ts",
-        "predeploy": "build",
+        "predeploy": "vite build --config vite/config.prod.ts",
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
