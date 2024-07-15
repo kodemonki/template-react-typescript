@@ -22,9 +22,12 @@
     ],
     "scripts": {
         "dev": "vite --config vite/config.dev.ts",
-        "build": "vite build --config vite/config.prod.ts"
+        "build": "vite build --config vite/config.prod.ts",
+        "predeploy": "build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
+        "gh-pages": "^6.1.1",
         "phaser": "^3.80.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -43,3 +46,4 @@
         "vite": "^5.1.4"
     }
 }
+
